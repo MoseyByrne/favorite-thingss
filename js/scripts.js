@@ -16,10 +16,16 @@
       const newArray = [];
       newArray.push([formArray[2], formArray[1]]);
       console.log(newArray);
-      
-   
+
+      let list = document.getElementById("myList");
+
+      newArray.forEach((item) => {
+      let li = document.createElement("li");
+      li.innerText = item;
+      list.appendChild(li);
    
       event.preventDefault();
+    })
     });
   });
   
